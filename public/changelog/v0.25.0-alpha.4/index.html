@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="hacker">
+  <head>
+    <title>Hickory DNS</title>
+    
+    
+      <link rel="icon" href="&#x2f;favicon.ico" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hickory DNS" />
+    
+    
+    
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="stylesheet" href="&#x2f;oranda-v0.6.1.css" />
+    
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-body">
+        
+          <div class="repo_banner">
+            <a href="https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns">
+              <div class="github-icon" aria-hidden="true"></div>
+              Check out our GitHub!
+            </a>
+          </div>
+        
+
+        <main>
+          <header>
+            
+              <img src="&#x2f;logo.png" alt="Hickory DNS" class="logo" />
+            
+            <h1 class="title">Hickory DNS</h1>
+            
+  <nav class="nav">
+    <ul>
+      <li><a href="&#x2f;">Home</a></li>
+
+      
+
+      
+
+      
+        <li><a href="&#x2f;book&#x2f;">Docs</a></li>
+      
+
+      
+
+      
+        <li><a href="&#x2f;changelog&#x2f;">Changelog</a></li>
+      
+    </ul>
+  </nav>
+
+          </header>
+
+          
+  <div>
+    <h1>0.25.0-alpha.4</h1>
+    <div class="releases-body">
+      
+      
+      <section class="release ">
+  
+  <div class="release-info">
+    <span class="flex items-center gap-2">
+      <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+      v0.25.0-alpha.4
+    </span>
+    <span class="flex items-center gap-2">
+      
+        <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+        Nov 28 2024 at 16:57 UTC
+      
+    </span>
+  </div>
+  <div class="release-body">
+    &lt;h2&gt;What&#x27;s Changed&lt;&#x2f;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ci: stop blocking on the platform matrix jobs by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2563&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2563&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;feat: Implement Round Robin server selection for DNS lookups by @hingbong in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2557&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2557&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;resolver: make ForwarderAuthority generic by @Stormshield-robinc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2568&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2568&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Replace DnsResponse::new() constructor by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2573&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2573&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;fix key tag collision issue in zone signer by @marcus0x62 in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2556&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2556&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;CI: Check hickory-proto with WASI preview 1 by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2575&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2575&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;resolver NameServerPool tweaks by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2567&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2567&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;More modularization of DNSSEC crypto code by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2566&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2566&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Start untangling rustls ClientConfig setup by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2569&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2569&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;dns: improve error message when Cargo feature is missing by @japaric in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2580&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2580&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Fix dns-over-openssl by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2584&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2584&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;util: Fix building with rustls_native_certs only by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2585&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2585&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Switch DnsLru from lru-cache to moka by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2576&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2576&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Clean up references to AsyncClient by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2588&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2588&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Dnssec insecure delegations by @marcus0x62 in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2546&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2546&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Extend dig timeout in bad referral tests by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2594&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2594&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;server: Fix compilation of recursor authority without DNSSEC by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2586&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2586&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Add cargo-all-features configuration by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2587&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2587&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Remove redundant cache insert in resolve_cnames() by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2596&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2596&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Update default logging filter to match all crates by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2597&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2597&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Update READMEs by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2591&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2591&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Run cargo check-all-features in CI by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2592&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2592&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Coverage improvements by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2599&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2599&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Update url in fuzzer lockfile by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2607&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2607&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Box the query in ProtoErrorKind::Nsec by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2610&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2610&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Update semver-compatible dependencies &amp;amp; bump MSRV by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2617&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2617&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Redirect output of command to clean up test output by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2611&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2611&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Don&#x27;t send DAU&#x2f;DHU options in responses by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2614&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2614&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Conformance: tests for handling of TC=1 responses by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2609&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2609&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;build(deps): bump codecov&#x2f;codecov-action from 4 to 5 by @dependabot in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2582&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2582&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Simplify PublicKey trait by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2616&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2616&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;bump idna to 1.0 and url to 2.5 by @zh-jq in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2564&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2564&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Document suggested rust-analyzer configuration by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2606&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2606&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Drop privileges on Unix-family platforms by @marcus0x62 in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2598&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2598&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;proto: apply timeout to TLS&#x2f;QUIC&#x2f;H3 handshake phase by @japaric in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2583&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2583&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Update authority documentation by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2623&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2623&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Remove mention of Subject Public Key Info in docs by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2624&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2624&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Update copied documentation by @divergentdave in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2625&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2625&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Don&#x27;t implicitly enable DNSSEC when DoT is enabled by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2615&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2615&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Timeout tweaks by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2620&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2620&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;accept idle timeouts for TLS and HTTPS futures by @marcus0x62 in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2622&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2622&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Apply clippy suggestions for 1.83 by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2628&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2628&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Replace PublicKeyEnum with decode_public_key() function by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2621&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2621&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;li&gt;Prepare alpha.4 by @djc in &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2627&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&#x2f;pull&#x2f;2627&lt;&#x2f;a&gt;&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+
+  </div>
+</section>
+    </div>
+  </div>
+
+        </main>
+      </div>
+
+      <footer>
+        
+          <a href="https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns"><div class="github-icon" aria-hidden="true"></div></a>
+        
+        <span>
+          Hickory DNS, MIT OR Apache-2.0
+        </span>
+      </footer>
+    </div>
+
+    
+    
+
+    
+  </body>
+</html>

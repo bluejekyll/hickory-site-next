@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="hacker">
+  <head>
+    <title>Hickory DNS</title>
+    
+    
+      <link rel="icon" href="&#x2f;favicon.ico" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hickory DNS" />
+    
+    
+    
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="stylesheet" href="&#x2f;oranda-v0.6.1.css" />
+    
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-body">
+        
+          <div class="repo_banner">
+            <a href="https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns">
+              <div class="github-icon" aria-hidden="true"></div>
+              Check out our GitHub!
+            </a>
+          </div>
+        
+
+        <main>
+          <header>
+            
+              <img src="&#x2f;logo.png" alt="Hickory DNS" class="logo" />
+            
+            <h1 class="title">Hickory DNS</h1>
+            
+  <nav class="nav">
+    <ul>
+      <li><a href="&#x2f;">Home</a></li>
+
+      
+
+      
+
+      
+        <li><a href="&#x2f;book&#x2f;">Docs</a></li>
+      
+
+      
+
+      
+        <li><a href="&#x2f;changelog&#x2f;">Changelog</a></li>
+      
+    </ul>
+  </nav>
+
+          </header>
+
+          
+  <div>
+    <h1>v0.24 Announcing Hickory DNS</h1>
+    <div class="releases-body">
+      
+      
+      <section class="release ">
+  
+  <div class="release-info">
+    <span class="flex items-center gap-2">
+      <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>
+      v0.24.0
+    </span>
+    <span class="flex items-center gap-2">
+      
+        <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>
+        Oct 14 2023 at 01:42 UTC
+      
+    </span>
+  </div>
+  <div class="release-body">
+    &lt;h2&gt;0.24.0&lt;&#x2f;h2&gt;
+&lt;p&gt;&lt;strong&gt;NOTICE&lt;&#x2f;strong&gt; This project has been rebranded to Hickory DNS and has been moved to the &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&quot; rel=&quot;noopener noreferrer&quot;&gt;https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns&lt;&#x2f;a&gt; organization and repo, from 0.24.0 onward. This &lt;a href=&quot;https:&#x2f;&#x2f;bluejekyll.github.io&#x2f;blog&#x2f;posts&#x2f;announcing-hickory-dns&#x2f;&quot; rel=&quot;noopener noreferrer&quot;&gt;blog post&lt;&#x2f;a&gt; explains the reasoning behind this move.&lt;&#x2f;p&gt;
+&lt;h3&gt;Changed&lt;&#x2f;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(proto) Make DnsHandle::send &amp;amp;self instead of &amp;amp;mut self #2018 by ibigbug&lt;&#x2f;li&gt;
+&lt;li&gt;(all) Update dependencies (avoid vulnerability), optional TOML, remove unused dependencies #2028 by djc&lt;&#x2f;li&gt;
+&lt;li&gt;(server) Privatize the Lexer API #2040 by djc&lt;&#x2f;li&gt;
+&lt;li&gt;(server) Use consistent error type for read_system_conf() #2047 by djc&lt;&#x2f;li&gt;
+&lt;li&gt;(server) Optimized shutdown_gracefully() #2041 by caobug&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;h3&gt;Added&lt;&#x2f;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(server) add register with rustls server config #2004 by yaotthaha&lt;&#x2f;li&gt;
+&lt;li&gt;(all) Add webpki-roots and native-certs crate features #2005 by daxpedda&lt;&#x2f;li&gt;
+&lt;li&gt;(bin) add run-example target to justfile to simply start trust-dns for manual testing #2020 by bluejekyll&lt;&#x2f;li&gt;
+&lt;li&gt;(all) DoH3 support #1987 by daxpedda&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;h3&gt;Fixed&lt;&#x2f;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(bin) Add root certificates to the binary crate #2059 by daxpedda&lt;&#x2f;li&gt;
+&lt;li&gt;(proto) proto&#x2f;rr: do not deserialize ClientSubnets with invalid prefixes #2057 by 00xc&lt;&#x2f;li&gt;
+&lt;li&gt;(resolver) Fix the resolver version warning in the workspace #2013 by bluejekyll&lt;&#x2f;li&gt;
+&lt;li&gt;(proto) Forward serde-config feature to the proto crate #2019 by cetanu&lt;&#x2f;li&gt;
+&lt;li&gt;(server) Prevent task reaping from blocking #2023 by lpraneis&lt;&#x2f;li&gt;
+&lt;li&gt;(proto) Dont panic on nsec without dnssec #2025 by bluejekyll&lt;&#x2f;li&gt;
+&lt;li&gt;(server) Spawn H2 Data frame processing into a separate task #2033 by yaroslavros&lt;&#x2f;li&gt;
+&lt;li&gt;(proto) DoQ default configuration #2036 by daxpedda&lt;&#x2f;li&gt;
+&lt;li&gt;(resolver) caching bug when CNAME leads to negative response #2053 by Clendenin&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;h3&gt;Removed&lt;&#x2f;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(resolver) Remove Copy from ResolverOpts #2029 by daxpedda&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+
+  </div>
+</section>
+    </div>
+  </div>
+
+        </main>
+      </div>
+
+      <footer>
+        
+          <a href="https:&#x2f;&#x2f;github.com&#x2f;hickory-dns&#x2f;hickory-dns"><div class="github-icon" aria-hidden="true"></div></a>
+        
+        <span>
+          Hickory DNS, MIT OR Apache-2.0
+        </span>
+      </footer>
+    </div>
+
+    
+    
+
+    
+  </body>
+</html>
