@@ -1,0 +1,99 @@
+[package]
+name = "hickory-dns"
+
+# A short blurb about the package. This is not rendered in any format when
+# uploaded to crates.io (aka this is not markdown)
+description = """
+Hickory DNS is a safe and secure DNS server with DNSSEC support.
+ Eventually this could be a replacement for BIND9. The DNSSEC support allows
+ for live signing of all records, in it does not currently support
+ records signed offline. The server supports dynamic DNS with SIG0 authenticated
+ requests. Hickory DNS is based on the Tokio and Futures libraries, which means
+ it should be easily integrated into other software that also use those
+ libraries.
+"""
+
+documentation = "https://docs.rs/hickory-dns"
+readme = "README.md"
+
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+homepage.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+license.workspace = true
+
+[features]
+default = ["sqlite", "resolver", "native-certs", "ascii-art"]
+
+# if enabled, the hickory-dns binary will print ascii-art on start, disable to reduce the binary size
+ascii-art = []
+
+blocklist = ["hickory-server/blocklist"]
+dnssec-ring = ["dnssec", "hickory-server/dnssec-ring"]
+dnssec = []
+recursor = ["hickory-server/recursor"]
+# Recursive Resolution is Experimental!
+resolver = ["hickory-server/resolver"]
+sqlite = ["hickory-server/sqlite", "dep:rusqlite"]
+
+dns-over-https-rustls = ["dns-over-rustls", "hickory-server/dns-over-https-rustls"]
+dns-over-quic = ["dns-over-rustls", "hickory-server/dns-over-quic"]
+dns-over-h3 = ["dns-over-rustls", "hickory-server/dns-over-h3"]
+
+dns-over-rustls = ["dns-over-tls", "dep:rustls", "hickory-server/dns-over-rustls"]
+dns-over-tls = []
+
+webpki-roots = ["hickory-server/webpki-roots"]
+native-certs = ["hickory-server/native-certs"]
+
+[[bin]]
+name = "hickory-dns"
+path = "src/hickory-dns.rs"
+
+[dependencies]
+# clap features:
+# - `suggestions` for advanced help with error in cli
+# - `derive` for clap derive api
+# - `help` to generate --help
+cfg-if.workspace = true
+clap = { workspace = true, default-features = false, features = ["cargo", "derive", "help", "std", "suggestions"] }
+futures-util = { workspace = true, default-features = false, features = ["std"] }
+ipnet = { workspace = true, features = ["serde"] }
+# rusqlite is actually only needed for test situations, but we need an optional dependency
+# here so we can disable it for MSRV tests (rusqlite only supports latest stable)
+rusqlite = { workspace = true, features = ["bundled", "time"], optional = true }
+socket2.workspace = true
+rustls = { workspace = true, optional = true }
+serde = { workspace = true, features = ["derive"] }
+time.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+tokio = { workspace = true, features = ["time", "rt"] }
+toml.workspace = true
+hickory-client.workspace = true
+hickory-proto.workspace = true
+hickory-server = { workspace = true, features = ["toml"] }
+
+[target.'cfg(unix)'.dependencies]
+libc.workspace = true
+
+[dev-dependencies]
+futures-executor = { workspace = true, default-features = false, features = ["std"] }
+regex.workspace = true
+hickory-proto = { workspace = true, features = ["testing"] }
+hickory-resolver.workspace = true
+test-support.workspace = true
+toml.workspace = true
+webpki-roots.workspace = true
+
+[lints]
+workspace = true
+
+[package.metadata.cargo-all-features]
+skip_optional_dependencies = true
+denylist = ["dnssec", "dns-over-tls"]
+max_combination_size = 2
