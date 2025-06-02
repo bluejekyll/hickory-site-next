@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hickory DNS Changelog</title><link>http://127.0.0.1:7979/changelog</link><description>Changelog information for Hickory DNS</description><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><atom:link href="http://127.0.0.1:7979/changelog.rss" rel="self"/><item><title>0.25.2</title><link>http://127.0.0.1:7979/changelog/v0.25.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.2</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hickory DNS Changelog</title><link>http://127.0.0.1:7979/hickory-site-next/changelog</link><description>Changelog information for Hickory DNS</description><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><atom:link href="http://127.0.0.1:7979/hickory-site-next/changelog.rss" rel="self"/><item><title>0.25.2</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.2</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
 <ul>
 <li>Rewrite Dockerfile with cargo-chef by @divergentdave in <a href="https://github.com/hickory-dns/hickory-dns/pull/2874" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2874</a></li>
 <li>Use ECDSA keys in most conformance tests by @divergentdave in <a href="https://github.com/hickory-dns/hickory-dns/pull/2879" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2879</a></li>
@@ -50,13 +50,13 @@
 <li>tests: tidy legacy config field comments by @cpu in <a href="https://github.com/hickory-dns/hickory-dns/pull/2960" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2960</a></li>
 <li>Add separate Prometheus HTTP server by @divergentdave in <a href="https://github.com/hickory-dns/hickory-dns/pull/2954" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2954</a></li>
 </ul>
-]]></content:encoded></item><item><title>0.25.1</title><link>http://127.0.0.1:7979/changelog/v0.25.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.1</guid><content:encoded><![CDATA[<p>This is a small patch release to address errors that prevented publication of version 0.25.0 of some crates.</p>
+]]></content:encoded></item><item><title>0.25.1</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.1</guid><content:encoded><![CDATA[<p>This is a small patch release to address errors that prevented publication of version 0.25.0 of some crates.</p>
 <h2>What's Changed</h2>
 <ul>
 <li>Make sure test-support is a dev-dependency by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2871" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2871</a></li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/hickory-dns/hickory-dns/compare/v0.25.0...v0.25.1" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/compare/v0.25.0...v0.25.1</a></p>
-]]></content:encoded></item><item><title>0.25.0</title><link>http://127.0.0.1:7979/changelog/v0.25.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.0</guid><content:encoded><![CDATA[<p>0.25.0 represents a large release for the Hickory DNS project. Over 14 months since 0.24.0, we've added two new maintainers, divergentdave and marcus0x62, and have addressed many limitations. A team from Ferrous Systems <a href="https://ferrous-systems.com/blog/hickory-dns-client/" rel="noopener noreferrer">shored up our support for DNSSEC</a>, and we addressed a number of findings from <a href="https://ostif.org/hickorydns-audit-complete/" rel="noopener noreferrer">our first security audit</a>.</p>
+]]></content:encoded></item><item><title>0.25.0</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0</guid><content:encoded><![CDATA[<p>0.25.0 represents a large release for the Hickory DNS project. Over 14 months since 0.24.0, we've added two new maintainers, divergentdave and marcus0x62, and have addressed many limitations. A team from Ferrous Systems <a href="https://ferrous-systems.com/blog/hickory-dns-client/" rel="noopener noreferrer">shored up our support for DNSSEC</a>, and we addressed a number of findings from <a href="https://ostif.org/hickorydns-audit-complete/" rel="noopener noreferrer">our first security audit</a>.</p>
 <h2>Breaking changes</h2>
 <p>This is not an exhaustive list of changes, but here are some of the most impactful breaking changes in this release:</p>
 <ul>
@@ -561,13 +561,13 @@
 <li>Improve encapsulation of RecordTypeSet by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2865" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2865</a></li>
 <li>Use GitHub Releases for release notes going forward by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2789" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2789</a></li>
 </ul>
-]]></content:encoded></item><item><title>0.24.4</title><link>http://127.0.0.1:7979/changelog/v0.24.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.24.4</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
+]]></content:encoded></item><item><title>0.24.4</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.4</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
 <ul>
 <li>[0.24] Use cargo environment variables for path to executable by @msrd0 in <a href="https://github.com/hickory-dns/hickory-dns/pull/2773" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2773</a></li>
 <li>[0.24] bump ring to 0.17.8 by @drahnr in <a href="https://github.com/hickory-dns/hickory-dns/pull/2759" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2759</a></li>
 <li>Prepare 0.24.4 by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2784" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2784</a></li>
 </ul>
-]]></content:encoded></item><item><title>v0.25.0-alpha.5</title><link>http://127.0.0.1:7979/changelog/v0.25.0-alpha.5</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.0-alpha.5</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
+]]></content:encoded></item><item><title>v0.25.0-alpha.5</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.5</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.5</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
 <ul>
 <li>Update the root hints file in the test configs directory. by @marcus0x62 in <a href="https://github.com/hickory-dns/hickory-dns/pull/2629" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2629</a></li>
 <li>Referral filtering by @marcus0x62 in <a href="https://github.com/hickory-dns/hickory-dns/pull/2604" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2604</a></li>
@@ -659,16 +659,16 @@
 <li>@interj made their first contribution in <a href="https://github.com/hickory-dns/hickory-dns/pull/2744" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2744</a></li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/hickory-dns/hickory-dns/compare/v0.25.0-alpha.4...v0.25.0-alpha.5" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/compare/v0.25.0-alpha.4...v0.25.0-alpha.5</a></p>
-]]></content:encoded></item><item><title>v0.24.3</title><link>http://127.0.0.1:7979/changelog/v0.24.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.24.3</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
+]]></content:encoded></item><item><title>v0.24.3</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.3</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
 <ul>
 <li>Fix tests on 0.24 release branch by @divergentdave in <a href="https://github.com/hickory-dns/hickory-dns/pull/2752" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2752</a></li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/hickory-dns/hickory-dns/compare/v0.24.2...v0.24.3" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/compare/v0.24.2...v0.24.3</a></p>
-]]></content:encoded></item><item><title>v0.24.2</title><link>http://127.0.0.1:7979/changelog/v0.24.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.24.2</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
+]]></content:encoded></item><item><title>v0.24.2</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.2</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
 <ul>
 <li>0.24: upgrade to idna 1 by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2664" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2664</a></li>
 </ul>
-]]></content:encoded></item><item><title>0.25.0-alpha.4</title><link>http://127.0.0.1:7979/changelog/v0.25.0-alpha.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.0-alpha.4</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
+]]></content:encoded></item><item><title>0.25.0-alpha.4</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.4</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
 <ul>
 <li>ci: stop blocking on the platform matrix jobs by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2563" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2563</a></li>
 <li>feat: Implement Round Robin server selection for DNS lookups by @hingbong in <a href="https://github.com/hickory-dns/hickory-dns/pull/2557" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2557</a></li>
@@ -715,7 +715,7 @@
 <li>Replace PublicKeyEnum with decode_public_key() function by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2621" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2621</a></li>
 <li>Prepare alpha.4 by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2627" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2627</a></li>
 </ul>
-]]></content:encoded></item><item><title>0.25.0-alpha.3</title><link>http://127.0.0.1:7979/changelog/v0.25.0-alpha.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.0-alpha.3</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
+]]></content:encoded></item><item><title>0.25.0-alpha.3</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.3</guid><content:encoded><![CDATA[<h2>What's Changed</h2>
 <ul>
 <li>util: add a newline between records in resolve report by @bluejekyll in <a href="https://github.com/hickory-dns/hickory-dns/pull/2347" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2347</a></li>
 <li>proto: make time dependency optional by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2349" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2349</a></li>
@@ -864,7 +864,7 @@
 <li>Prepare 0.25.0-alpha.3 release by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2561" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2561</a></li>
 <li>Bump dependency version for internal dependencies by @djc in <a href="https://github.com/hickory-dns/hickory-dns/pull/2562" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns/pull/2562</a></li>
 </ul>
-]]></content:encoded></item><item><title>v0.25.0-alpha.2</title><link>http://127.0.0.1:7979/changelog/v0.25.0-alpha.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.0-alpha.2</guid><content:encoded><![CDATA[<h2>0.25.0</h2>
+]]></content:encoded></item><item><title>v0.25.0-alpha.2</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.2</guid><content:encoded><![CDATA[<h2>0.25.0</h2>
 <h3>Fixed</h3>
 <ul>
 <li>(build) Suppress implicit features from optional dependencies #2337 by djc</li>
@@ -985,7 +985,7 @@
 <ul>
 <li>(proto) Break when socket is unexpectedly shut down #2171 by dlon</li>
 </ul>
-]]></content:encoded></item><item><title>v0.25.0-alpha.1</title><link>http://127.0.0.1:7979/changelog/v0.25.0-alpha.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.25.0-alpha.1</guid><content:encoded><![CDATA[<h2>0.25.0</h2>
+]]></content:encoded></item><item><title>v0.25.0-alpha.1</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.25.0-alpha.1</guid><content:encoded><![CDATA[<h2>0.25.0</h2>
 <h3>Fixed</h3>
 <ul>
 <li>(recursor) send DS queries to the parent zone #2203 by japaric</li>
@@ -1042,15 +1042,15 @@
 <li>(all) Remove broken mtls code to fix CI #2218 by djc</li>
 <li>(proto) Remove generic Error from DnsHandle #2094 by bluejekyll</li>
 </ul>
-]]></content:encoded></item><item><title></title><link>http://127.0.0.1:7979/changelog/v0.24.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.24.1</guid><content:encoded><![CDATA[<h1>0.24.1</h1>
+]]></content:encoded></item><item><title></title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.1</guid><content:encoded><![CDATA[<h1>0.24.1</h1>
 <h2>Fixed</h2>
 <p>Break when socket is unexpectedly shut down #2171 by dlon</p>
-]]></content:encoded></item><item><title>Update docs.rs and generated docs to reference Hickory</title><link>http://127.0.0.1:7979/changelog/v0.23.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.2</guid><content:encoded><![CDATA[<h2>0.23.2</h2>
+]]></content:encoded></item><item><title>Update docs.rs and generated docs to reference Hickory</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.2</guid><content:encoded><![CDATA[<h2>0.23.2</h2>
 <h3>Changed</h3>
 <ul>
 <li>(all) Added Hickory DNS notice to all library root docs</li>
 </ul>
-]]></content:encoded></item><item><title>v0.24 Announcing Hickory DNS</title><link>http://127.0.0.1:7979/changelog/v0.24.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.24.0</guid><content:encoded><![CDATA[<h2>0.24.0</h2>
+]]></content:encoded></item><item><title>v0.24 Announcing Hickory DNS</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.24.0</guid><content:encoded><![CDATA[<h2>0.24.0</h2>
 <p><strong>NOTICE</strong> This project has been rebranded to Hickory DNS and has been moved to the <a href="https://github.com/hickory-dns/hickory-dns" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns</a> organization and repo, from 0.24.0 onward. This <a href="https://bluejekyll.github.io/blog/posts/announcing-hickory-dns/" rel="noopener noreferrer">blog post</a> explains the reasoning behind this move.</p>
 <h3>Changed</h3>
 <ul>
@@ -1083,12 +1083,12 @@
 <ul>
 <li>(resolver) Remove Copy from ResolverOpts #2029 by daxpedda</li>
 </ul>
-]]></content:encoded></item><item><title>Rebranding of Trust-DNS to Hickory DNS notice</title><link>http://127.0.0.1:7979/changelog/v0.23.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.1</guid><content:encoded><![CDATA[<h2>0.23.1</h2>
+]]></content:encoded></item><item><title>Rebranding of Trust-DNS to Hickory DNS notice</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.1</guid><content:encoded><![CDATA[<h2>0.23.1</h2>
 <h3>Changed</h3>
 <ul>
 <li>(all) <strong>NOTICE</strong> This project has been rebranded to Hickory DNS and has been moved to the <a href="https://github.com/hickory-dns/hickory-dns" rel="noopener noreferrer">https://github.com/hickory-dns/hickory-dns</a> organization and repo, from 0.24.0 onward. This <a href="https://bluejekyll.github.io/blog/posts/announcing-hickory-dns/" rel="noopener noreferrer">blog post</a> explains the reasoning behind this move.</li>
 </ul>
-]]></content:encoded></item><item><title>v0.23.0</title><link>http://127.0.0.1:7979/changelog/v0.23.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.0</guid><content:encoded><![CDATA[<h2>0.23.0</h2>
+]]></content:encoded></item><item><title>v0.23.0</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0</guid><content:encoded><![CDATA[<h2>0.23.0</h2>
 <h3>Fixed</h3>
 <ul>
 <li>(resolver) Malformed label: -- when parsing resolv.conf #1985 by Jake-Shadle</li>
@@ -1189,7 +1189,7 @@
 <li>(client) client: rm zone parse optional class arg.</li>
 <li>(proto) Implement EDNS Client Subnet ECS reading and writing #1906 by mokeyish</li>
 </ul>
-]]></content:encoded></item><item><title>v0.23.0-alpha.5</title><link>http://127.0.0.1:7979/changelog/v0.23.0-alpha.5</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.0-alpha.5</guid><content:encoded><![CDATA[<h2>0.23.0</h2>
+]]></content:encoded></item><item><title>v0.23.0-alpha.5</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.5</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.5</guid><content:encoded><![CDATA[<h2>0.23.0</h2>
 <h3>Fixed</h3>
 <ul>
 <li>(proto) Fix truncation for UDP #1975 by nmittler</li>
@@ -1206,7 +1206,7 @@
 <li>(resolver) Add Google DoT and DoH to ResolverConfig #1989 by daxpedda</li>
 <li>(server) Adding graceful shutdown to server #1977 by nmittler</li>
 </ul>
-]]></content:encoded></item><item><title>v0.23.0-alpha.4</title><link>http://127.0.0.1:7979/changelog/v0.23.0-alpha.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.0-alpha.4</guid><content:encoded><![CDATA[<h3>Fixed</h3>
+]]></content:encoded></item><item><title>v0.23.0-alpha.4</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.4</guid><content:encoded><![CDATA[<h3>Fixed</h3>
 <ul>
 <li>(proto) avoid panicking in parse_time() #1964 by djc</li>
 <li>(server) Merge up deny response in requests to server #1954 by djc</li>
@@ -1221,7 +1221,7 @@
 <li>(all) add an html coverage report for local review of coverage data #1959 by bluejekyll</li>
 <li>(resolver) Add the possibility to shuffle NameServers #1920 by Edu4rdSHL</li>
 </ul>
-]]></content:encoded></item><item><title>v0.23.0-alpha.2</title><link>http://127.0.0.1:7979/changelog/v0.23.0-alpha.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.0-alpha.3</guid><content:encoded><![CDATA[<h3>Fixed</h3>
+]]></content:encoded></item><item><title>v0.23.0-alpha.2</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.3</guid><content:encoded><![CDATA[<h3>Fixed</h3>
 <ul>
 <li>(server) Merge up deny response in requests to server #1954</li>
 <li>(proto) remove duplicate is_soa function #1948 by mattsse</li>
@@ -1241,13 +1241,13 @@
 <li>(resolver) add test for connecting DoH with pure IP Address #1936 by mokeyish</li>
 <li>(resolver) add NameServerConfigGroup::from_ips_quic #1929 by zh-jq</li>
 </ul>
-]]></content:encoded></item><item><title>v0.22.1 - Deny response requests on the server</title><link>http://127.0.0.1:7979/changelog/v0.22.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.22.1</guid><content:encoded><![CDATA[<h2>0.22.1</h2>
+]]></content:encoded></item><item><title>v0.22.1 - Deny response requests on the server</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.22.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.22.1</guid><content:encoded><![CDATA[<h2>0.22.1</h2>
 <h3>Fixed</h3>
 <ul>
 <li>(server) drop response messages #1952 by @djc</li>
 </ul>
-]]></content:encoded></item><item><title>v0.23.0-alpha.2</title><link>http://127.0.0.1:7979/changelog/v0.23.0-alpha.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.0-alpha.2</guid><content:encoded><![CDATA[<p>Bumped alpha.2 to fix git publish</p>
-]]></content:encoded></item><item><title>v0.23.0-alpha.1</title><link>http://127.0.0.1:7979/changelog/v0.23.0-alpha.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.23.0-alpha.1</guid><content:encoded><![CDATA[<p>Initial Alpha release of 0.23.0</p>
+]]></content:encoded></item><item><title>v0.23.0-alpha.2</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.2</guid><content:encoded><![CDATA[<p>Bumped alpha.2 to fix git publish</p>
+]]></content:encoded></item><item><title>v0.23.0-alpha.1</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.23.0-alpha.1</guid><content:encoded><![CDATA[<p>Initial Alpha release of 0.23.0</p>
 <h2>0.23.0</h2>
 <h3>Fixed</h3>
 <ul>
@@ -1324,7 +1324,7 @@
 <li>(client) client: rm zone parse optional class arg.</li>
 <li>(proto) Implement EDNS Client Subnet ECS reading and writing #1906 by mokeyish</li>
 </ul>
-]]></content:encoded></item><item><title>v0.22.0 -- Experimental Recursor and the Dns CLI</title><link>http://127.0.0.1:7979/changelog/v0.22.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.22.0</guid><content:encoded><![CDATA[<h2>0.22.0</h2>
+]]></content:encoded></item><item><title>v0.22.0 -- Experimental Recursor and the Dns CLI</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.22.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.22.0</guid><content:encoded><![CDATA[<h2>0.22.0</h2>
 <h3>Removed</h3>
 <ul>
 <li>(deps) don't pull in env_logger if we aren't actually a binary #1701 by @Noah-Kennedy</li>
@@ -1376,7 +1376,7 @@
 <li>(all) Included githubactions in the dependabot config #1681 by @naveensrinivasan</li>
 <li>(proto) deprecated <code>edns</code> methods on request and replaced with <code>extensions</code> and better scemantics #1675 by @leshow</li>
 </ul>
-]]></content:encoded></item><item><title>v0.21.2 -- Mostly correctness fixes to 0.21</title><link>http://127.0.0.1:7979/changelog/v0.21.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.21.2</guid><content:encoded><![CDATA[<h2>0.21.2</h2>
+]]></content:encoded></item><item><title>v0.21.2 -- Mostly correctness fixes to 0.21</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.2</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.2</guid><content:encoded><![CDATA[<h2>0.21.2</h2>
 <h3>Added</h3>
 <ul>
 <li>(proto) add PartialEq+Hash derives, #1661 by @leshow</li>
@@ -1399,12 +1399,12 @@
 <li>(resolver) force forwarder to preserve_intermediates, #1660 by @vlmutolo</li>
 <li>(resolver) make constructors for AsyncResolver with custom providers public, #1654 by @Noah-Kennedy</li>
 </ul>
-]]></content:encoded></item><item><title>v0.21.1</title><link>http://127.0.0.1:7979/changelog/v0.21.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.21.1</guid><content:encoded><![CDATA[<h2>0.21.1</h2>
+]]></content:encoded></item><item><title>v0.21.1</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.1</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.1</guid><content:encoded><![CDATA[<h2>0.21.1</h2>
 <h3>Fixed</h3>
 <ul>
 <li>(util) fixed feature build issue in <code>resolve</code> #1649</li>
 </ul>
-]]></content:encoded></item><item><title>v0.21.0</title><link>http://127.0.0.1:7979/changelog/v0.21.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.21.0</guid><content:encoded><![CDATA[<h2>0.21.0</h2>
+]]></content:encoded></item><item><title>v0.21.0</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0</guid><content:encoded><![CDATA[<h2>0.21.0</h2>
 <h3>Added</h3>
 <ul>
 <li>(client) Parse DS records (@kmkaplan) #1635</li>
@@ -1468,7 +1468,7 @@
 <li>(server) Release resources when a server future is dropped (@pinkisemils) #1587</li>
 <li>(proto) Panic when name exceeds maximal domain name length during display #1447</li>
 </ul>
-]]></content:encoded></item><item><title>v0.21.0-alpha.5, fix truncated response usage</title><link>http://127.0.0.1:7979/changelog/v0.21.0-alpha.5</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.21.0-alpha.5</guid><content:encoded><![CDATA[<h2>0.21.0 (unreleased)</h2>
+]]></content:encoded></item><item><title>v0.21.0-alpha.5, fix truncated response usage</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0-alpha.5</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0-alpha.5</guid><content:encoded><![CDATA[<h2>0.21.0 (unreleased)</h2>
 <h3>Added</h3>
 <ul>
 <li>(fuzz) Added fuzzing configuration (@saethlin) #1626</li>
@@ -1526,7 +1526,7 @@
 <li>(server) Release resources when a server future is dropped (@pinkisemils) #1587</li>
 <li>(proto) Panic when name exceeds maximal domain name length during display #1447</li>
 </ul>
-]]></content:encoded></item><item><title>v0.20.4, update tokio and remove audit failures</title><link>http://127.0.0.1:7979/changelog/v0.20.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.20.4</guid><content:encoded><![CDATA[<h2>0.20.4</h2>
+]]></content:encoded></item><item><title>v0.20.4, update tokio and remove audit failures</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.20.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.20.4</guid><content:encoded><![CDATA[<h2>0.20.4</h2>
 <h3>Fixed</h3>
 <ul>
 <li>(all) updated tokio dependencies to 1.16 #1623</li>
@@ -1536,7 +1536,7 @@
 <ul>
 <li>(all) Increased MSRV to 1.51</li>
 </ul>
-]]></content:encoded></item><item><title>v0.21.0-alpha.4</title><link>http://127.0.0.1:7979/changelog/v0.21.0-alpha.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.21.0-alpha.4</guid><content:encoded><![CDATA[<h2>0.21.0 (unreleased)</h2>
+]]></content:encoded></item><item><title>v0.21.0-alpha.4</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0-alpha.4</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0-alpha.4</guid><content:encoded><![CDATA[<h2>0.21.0 (unreleased)</h2>
 <h3>Added</h3>
 <ul>
 <li>(proto) trust_dns_proto::rr::Record now serializable (@mvforell) #1536</li>
@@ -1581,7 +1581,7 @@
 <ul>
 <li>(proto) Panic when name exceeds maximal domain name length during display #1447</li>
 </ul>
-]]></content:encoded></item><item><title>v0.21.0-alpha.3</title><link>http://127.0.0.1:7979/changelog/v0.21.0-alpha.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/changelog/v0.21.0-alpha.3</guid><content:encoded><![CDATA[<h2>0.21.0 (unreleased)</h2>
+]]></content:encoded></item><item><title>v0.21.0-alpha.3</title><link>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0-alpha.3</link><category domain="https://github.com/hickory-dns/hickory-dns">Hickory DNS Changelog</category><guid>http://127.0.0.1:7979/hickory-site-next/changelog/v0.21.0-alpha.3</guid><content:encoded><![CDATA[<h2>0.21.0 (unreleased)</h2>
 <h3>Added</h3>
 <ul>
 <li>(proto) trust_dns_proto::rr::Record now serializable (@mvforell) #1536</li>
