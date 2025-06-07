@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://github.com/hickory-dns/hickory-dns/sitemap.xml
+Sitemap: https://bluejekyll.github.io/hickory-site-next/sitemap.xml
